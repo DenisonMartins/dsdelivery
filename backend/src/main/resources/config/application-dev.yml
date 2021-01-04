@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    properties:
+#      javax:
+#        persistence:
+#          schema-generation:
+#            create-source: metadata
+#          scripts:
+#            action: create
+#            create-target: create.sql
+      hibernate:
+#        hbm2ddl:
+#          delimiter: ;
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/dsdelivery?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password:
