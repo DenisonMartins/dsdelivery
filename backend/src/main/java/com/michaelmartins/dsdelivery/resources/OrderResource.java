@@ -31,4 +31,9 @@ public class OrderResource {
                 .buildAndExpand(orderService.create(dto).getId()).toUri();
         return ResponseEntity.created(uri).body(orderSave);
     }
+
+    @PutMapping("/{id}/delivered")
+    public ResponseEntity<OrderDTO> delivered(@PathVariable Long id) {
+        return ResponseEntity.ok().body(orderService.delivered(id));
+    }
 }

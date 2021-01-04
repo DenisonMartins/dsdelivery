@@ -11,6 +11,7 @@ import java.time.Instant;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static com.michaelmartins.dsdelivery.domain.OrderStatus.DELIVERED;
 import static com.michaelmartins.dsdelivery.domain.OrderStatus.PENDING;
 
 @Service
@@ -41,4 +42,12 @@ public class OrderService {
 
         return new OrderDTO(orderRepository.save(order));
     }
+
+    @Transactional
+    public OrderDTO delivered(Long id) {
+        Order order = orderRepository.getOne(id);
+        order.setStatus(DELIVERED);
+        return new OrderDTO(orderRepository.save(order));
+    }
+
 }
