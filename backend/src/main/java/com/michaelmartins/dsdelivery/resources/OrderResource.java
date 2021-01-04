@@ -3,10 +3,10 @@ package com.michaelmartins.dsdelivery.resources;
 import com.michaelmartins.dsdelivery.dto.OrderDTO;
 import com.michaelmartins.dsdelivery.services.OrderService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -22,5 +22,13 @@ public class OrderResource {
     @GetMapping
     public ResponseEntity<List<OrderDTO>> findAll() {
         return ResponseEntity.ok(orderService.findAllOrdersPendings());
+    }
+
+    @PostMapping
+    public ResponseEntity<OrderDTO> create(@RequestBody OrderDTO dto) {
+        OrderDTO orderSave = orderService.create(dto);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{id}")
+                .buildAndExpand(orderService.create(dto).getId()).toUri();
+        return ResponseEntity.created(uri).body(orderSave);
     }
 }
