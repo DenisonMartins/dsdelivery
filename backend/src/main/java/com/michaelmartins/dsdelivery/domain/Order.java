@@ -36,8 +36,8 @@ public class Order implements Serializable {
 
     @ManyToMany
     @JoinTable(name = "tb_order_product",
-               joinColumns = @JoinColumn(name = "id_order"),
-               inverseJoinColumns = @JoinColumn(name = "id_product"))
+               joinColumns = @JoinColumn(name = "id_order", foreignKey = @ForeignKey(name = "FK_order_product")),
+               inverseJoinColumns = @JoinColumn(name = "id_product", foreignKey = @ForeignKey(name = "FK_product_order")))
     private Set<Product> products = new HashSet<>();
 
     public Order() {
