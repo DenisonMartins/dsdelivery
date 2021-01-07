@@ -55,7 +55,7 @@
     justify-content: center;
 }
 
-.orders-list-items {
+.orders-list-itens {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 235px);
