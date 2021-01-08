@@ -28,7 +28,7 @@ public class OrderResource {
     public ResponseEntity<OrderDTO> create(@RequestBody OrderDTO dto) {
         OrderDTO orderSave = orderService.create(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{id}")
-                .buildAndExpand(orderService.create(dto).getId()).toUri();
+                .buildAndExpand(orderSave.getId()).toUri();
         return ResponseEntity.created(uri).body(orderSave);
     }
 
