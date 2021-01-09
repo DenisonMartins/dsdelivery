@@ -4,6 +4,7 @@ import com.michaelmartins.dsdelivery.domain.Order;
 import com.michaelmartins.dsdelivery.domain.OrderStatus;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,7 @@ public class OrderDTO implements Serializable {
     private Instant moment;
     private OrderStatus status;
     private List<ProductDTO> products = new ArrayList<>();
+    private BigDecimal total;
 
     public OrderDTO() {
     }
@@ -31,6 +33,7 @@ public class OrderDTO implements Serializable {
         longitude = order.getLongitude();
         moment = order.getMoment();
         status = order.getStatus();
+        total = order.getTotal();
         products = order.getProducts().stream()
                 .map(ProductDTO::new)
                 .collect(Collectors.toList());
@@ -86,5 +89,13 @@ public class OrderDTO implements Serializable {
 
     public List<ProductDTO> getProducts() {
         return products;
+    }
+
+    public BigDecimal getTotal() {
+        return total;
+    }
+
+    public void setTotal(BigDecimal total) {
+        this.total = total;
     }
 }

@@ -2,6 +2,7 @@ package com.michaelmartins.dsdelivery.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.HashSet;
 import java.util.Objects;
@@ -98,6 +99,14 @@ public class Order implements Serializable {
 
     public void setStatus(OrderStatus status) {
         this.status = status;
+    }
+
+    public BigDecimal getTotal() {
+        BigDecimal sum = BigDecimal.ZERO;
+        for (Product product : products) {
+            sum = sum.add(BigDecimal.valueOf(product.getPrice()));
+        }
+        return sum;
     }
 
     public Set<Product> getProducts() {
