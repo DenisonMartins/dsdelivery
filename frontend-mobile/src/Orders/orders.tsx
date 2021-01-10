@@ -1,21 +1,36 @@
-import React from "react";
-import {ScrollView, StyleSheet} from "react-native";
+import React, {useEffect, useState} from "react";
+import {ScrollView, StyleSheet, Alert, TouchableWithoutFeedback, Text} from "react-native";
 import Header from "../Header/header";
 import OrderCard from "../OrderCard/ordercard";
+import {fetchOrders} from "../api";
+import {Order} from "../types";
 
 function Orders() {
 
+    const [orders, setOrders] = useState<Order[]>([]);
+    const [isLoading, setIsLoading] = useState(false);
+
+    useEffect(() => {
+        setIsLoading(true);
+        fetchOrders()
+            .then(response => setOrders(response.data))
+            .catch(() => Alert.alert('Houve um erro ao buscar os pedidos!'))
+            .finally(() => setIsLoading(false));
+    }, []);
 
     return (
         <>
-            <Header />
+            <Header/>
             <ScrollView style={styles.container}>
-                <OrderCard />
-                <OrderCard />
-                <OrderCard />
-                <OrderCard />
-                <OrderCard />
-                <OrderCard />
+                {isLoading ? (
+                    <Text>Buscando pedidos...</Text>
+                ) : (
+                    orders.map(order => (
+                        <TouchableWithoutFeedback key={order.id}>
+                            <OrderCard order={order}/>
+                        </TouchableWithoutFeedback>
+                    ))
+                )}
             </ScrollView>
         </>
     );
