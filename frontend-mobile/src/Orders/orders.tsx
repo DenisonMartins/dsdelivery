@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {ScrollView, StyleSheet, Alert, TouchableWithoutFeedback, Text} from "react-native";
+import {Alert, ScrollView, StyleSheet, Text, TouchableWithoutFeedback} from "react-native";
 import Header from "../Header/header";
 import OrderCard from "../OrderCard/ordercard";
 import {fetchOrders} from "../api";
@@ -26,7 +26,9 @@ function Orders() {
                     <Text>Buscando pedidos...</Text>
                 ) : (
                     orders.map(order => (
-                        <TouchableWithoutFeedback key={order.id}>
+                        <TouchableWithoutFeedback
+                            key={order.id}
+                        >
                             <OrderCard order={order}/>
                         </TouchableWithoutFeedback>
                     ))

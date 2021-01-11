@@ -18,18 +18,8 @@ function Routes() {
                     }
                 }}
             >
-                <Stack.Screen
-                    name="Home"
-                    component={Home}
-                >
-
-                </Stack.Screen>
-                <Stack.Screen
-                    name="Orders"
-                    component={Orders}
-                >
-
-                </Stack.Screen>
+                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Orders" component={Orders} />
             </Stack.Navigator>
         </NavigationContainer>
     )
