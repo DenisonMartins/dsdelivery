@@ -18,7 +18,7 @@ A aplicação consiste em um sistema de pedidos de comidas, onde os pedidos são
 ![Web 2](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPedidos.png)
 
 ## Modelo conceitual
-![Modelo Conceitual](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/modelo-conceitual%20(1).png)
+![Modelo Conceitual](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/modelo-conceitual.png)
 
 # Tecnologias utilizadas
 ## Backend
@@ -53,9 +53,6 @@ git clone https://github.com/DenisonMartins/dsdelivery
 
 # entrar na pasta do projeto backend
 cd backend
-
-# alterar o profile no arquivo application.yml
-spring.profiles.active = test
 
 # executar o projeto
 ./mvnw spring-boot:run
