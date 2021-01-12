@@ -10,7 +10,7 @@ DS Delivery é uma aplicação full stack web e mobile construída durante a 2ª
 A aplicação consiste em um sistema de pedidos de comidas, onde os pedidos são realizados pela web, e depois listados no mobile com opções para os entregadores de inciar a entrega, finalizar a entregar.
 
 ## Layout mobile
-![Mobile 1](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPrincipalMobile-min.png) ![Mobile 2](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/listagemPedidosMobile-min.png) ![Mobile 3](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/pedidoMobile-min.png)
+![Mobile 1](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPrincipalMobile-min.png) ![Mobile 2](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/listagemPedidosMobile.png) ![Mobile 3](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/pedidoMobile-min.png)
 
 ## Layout web
 ![Web 1](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPrincipal-min.png)
