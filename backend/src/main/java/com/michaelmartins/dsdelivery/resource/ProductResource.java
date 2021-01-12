@@ -1,7 +1,7 @@
-package com.michaelmartins.dsdelivery.resources;
+package com.michaelmartins.dsdelivery.resource;
 
 import com.michaelmartins.dsdelivery.dto.ProductDTO;
-import com.michaelmartins.dsdelivery.services.ProductService;
+import com.michaelmartins.dsdelivery.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

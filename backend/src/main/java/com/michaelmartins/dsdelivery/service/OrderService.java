@@ -1,9 +1,9 @@
-package com.michaelmartins.dsdelivery.services;
+package com.michaelmartins.dsdelivery.service;
 
 import com.michaelmartins.dsdelivery.domain.Order;
 import com.michaelmartins.dsdelivery.dto.OrderDTO;
-import com.michaelmartins.dsdelivery.repositories.OrderRepository;
-import com.michaelmartins.dsdelivery.repositories.ProductRepository;
+import com.michaelmartins.dsdelivery.repository.OrderRepository;
+import com.michaelmartins.dsdelivery.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,4 +1,4 @@
-package com.michaelmartins.dsdelivery.repositories;
+package com.michaelmartins.dsdelivery.repository;
 
 import com.michaelmartins.dsdelivery.domain.Order;
 import com.michaelmartins.dsdelivery.domain.OrderStatus;

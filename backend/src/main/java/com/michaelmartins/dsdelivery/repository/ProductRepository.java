@@ -1,4 +1,4 @@
-package com.michaelmartins.dsdelivery.repositories;
+package com.michaelmartins.dsdelivery.repository;
 
 import com.michaelmartins.dsdelivery.domain.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
