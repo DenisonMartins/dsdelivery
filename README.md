@@ -18,7 +18,7 @@ A aplicação consiste em um sistema de pedidos de comidas, onde os pedidos são
 ![Web 2](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPedidos.png)
 
 ## Modelo conceitual
-![Modelo Conceitual](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/modelo-conceitual (1).png)
+![Modelo Conceitual](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/modelo-conceitual%20(1).png)
 
 # Tecnologias utilizadas
 ## Backend
