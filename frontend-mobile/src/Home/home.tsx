@@ -1,7 +1,7 @@
 import React from "react";
 import {Image, StyleSheet, Text, View} from "react-native";
 import {RectButton} from 'react-native-gesture-handler'
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import Header from "../Header/header";
 
 function Home() {
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     button: {
-        backgroundColor: '#DA5C5C',
+        backgroundColor: '#2cc13f',
         flexDirection: "row",
         borderRadius: 10
     },

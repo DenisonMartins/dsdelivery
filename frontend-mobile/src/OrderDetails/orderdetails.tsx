@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         paddingLeft: '5%'
     },
     button: {
-        backgroundColor: '#DA5C5C',
+        backgroundColor: '#2cc13f',
         flexDirection: "row",
         borderRadius: 10,
         marginTop: 40,
