@@ -10,15 +10,15 @@ DS Delivery é uma aplicação full stack web e mobile construída durante a 2ª
 A aplicação consiste em um sistema de pedidos de comidas, onde os pedidos são realizados pela web, e depois listados no mobile com opções para os entregadores de inciar a entrega, finalizar a entregar.
 
 ## Layout mobile
-![Mobile 1](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPrincipalMobile-min.png) ![Mobile 2](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/listagemPedidosMobile.png) ![Mobile 3](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/pedidoMobile-min.png)
+![Mobile 1](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPrincipalMobile.png) ![Mobile 2](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/listagemPedidosMobile.png) ![Mobile 3](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/pedidoMobile.png)
 
 ## Layout web
-![Web 1](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPrincipal-min.png)
+![Web 1](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPrincipal.png)
 
-![Web 2](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPedidos-min.png)
+![Web 2](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/telaPedidos.png)
 
 ## Modelo conceitual
-![Modelo Conceitual](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/modelo-conceitual-min.png)
+![Modelo Conceitual](https://github.com/DenisonMartins/dsdelivery/blob/main/assets/modelo-conceitual.png)
 
 # Tecnologias utilizadas
 ## Backend
